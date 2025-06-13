@@ -19,3 +19,19 @@ def chapter01_01(number_array)
 end
 
 chapter01_01([8, 2, 6, 4])
+
+def even_number
+  number_array =[]
+  (1..n).times do |num|
+    number_array =[]
+    if num.even?
+      number_array << num
+    end
+  end
+  number_array
+end
+
+def valid_pairs(n)
+  number_array= (1..n).to_a.combinarion(2).to_a
+  valid_pairs = number_array.select{|pair| (pair[0] + pair [1] % 2 == 0)}
+end
